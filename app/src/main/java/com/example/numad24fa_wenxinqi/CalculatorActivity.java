@@ -76,6 +76,9 @@ public class CalculatorActivity extends AppCompatActivity {
 
                 // Parse the current number
                 if (number.length() > 0) {
+                    if (i == expression.length() - 1) {
+                        number.append(i);
+                    }
                     int currentNumber = Integer.parseInt(number.toString());
 
                     // Apply the last operator to the result
