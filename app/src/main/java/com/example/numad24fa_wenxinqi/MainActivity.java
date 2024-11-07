@@ -31,5 +31,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, CalculatorActivity.class);
             startActivity(intent);
         });
+
+        Button contactsButton = findViewById(R.id.buttonContacts);
+        contactsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ContactsActivity.class);
+            startActivity(intent);
+        });
     }
 }
