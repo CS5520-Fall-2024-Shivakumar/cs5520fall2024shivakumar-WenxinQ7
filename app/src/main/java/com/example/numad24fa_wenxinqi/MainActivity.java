@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         // Set up the "About Me" button
         Button aboutMeButton = findViewById(R.id.buttonAboutMe);
         aboutMeButton.setOnClickListener(v -> {
-            // Display the toast with your name and email
-            Toast.makeText(MainActivity.this, "Wenxin Qi\nqi.wenx@northeastern.edu", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, AboutMeActivity.class);
+            startActivity(intent);
         });
 
         Button quicCalcButton = findViewById(R.id.buttonQuicCalc);
